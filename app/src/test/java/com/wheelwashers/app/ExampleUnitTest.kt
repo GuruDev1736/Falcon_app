@@ -1,4 +1,4 @@
-package com.falcon.app
+package com.wheelwashers.app
 
 import org.junit.Test
 

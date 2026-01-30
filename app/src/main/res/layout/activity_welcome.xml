@@ -91,7 +91,7 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:tint="@color/white"
-                        android:src="@drawable/ic_plumbing"
+                        android:src="@drawable/ic_car_interior"
                         android:contentDescription="@string/plumbing_service" />
 
                     <TextView
@@ -127,7 +127,7 @@
                     <ImageView
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:src="@drawable/ic_ac"
+                        android:src="@drawable/ic_car_wash"
                         android:tint="@color/white"
                         android:contentDescription="@string/ac_service" />
 

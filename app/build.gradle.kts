@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.falcon.app"
+    namespace = "com.wheelwashers.app"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.falcon.app"
+        applicationId = "com.wheelwashers.app"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

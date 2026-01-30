@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">Falcon 5</string>
-    <string name="welcome_title">Welcome to Falcon 5</string>
-    <string name="welcome_subtitle">Your Trusted Plumbing &amp; A/C Experts in Texas</string>
+    <string name="app_name">Wheel Washers</string>
+    <string name="welcome_title">Welcome to Wheel Washers</string>
+    <string name="welcome_subtitle">Your Premium Car Washing Service</string>
     <string name="lets_go">Let\'s Go</string>
-    <string name="website_url">https://falcon5contractors.live/</string>
-    <string name="plumbing_service">Plumbing Services</string>
-    <string name="ac_service">A/C Services</string>
+    <string name="website_url">https://car-o-wash.anjamhelp.org/</string>
+    <string name="plumbing_service">Interior Cleaning</string>
+    <string name="ac_service">Exterior Wash</string>
     <string name="service_description">Professional &amp; Reliable</string>
-    <string name="trusted_experts">Trusted by Texans</string>
+    <string name="trusted_experts">Trusted Car Care</string>
 </resources>
