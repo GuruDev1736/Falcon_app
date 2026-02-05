@@ -22,13 +22,11 @@ class WelcomeActivity : AppCompatActivity() {
         val logo: ImageView = findViewById(R.id.iv_logo)
         val title: TextView = findViewById(R.id.tv_welcome_title)
         val subtitle: TextView = findViewById(R.id.tv_welcome_subtitle)
-        val plumbingCard: CardView = findViewById(R.id.card_plumbing)
-        val acCard: CardView = findViewById(R.id.card_ac)
         val featureBadge: CardView = findViewById(R.id.feature_badge)
         val letsGoButton: MaterialButton = findViewById(R.id.btn_lets_go)
 
         // Apply entrance animations
-        animateViews(logo, title, subtitle, plumbingCard, acCard, featureBadge, letsGoButton)
+        animateViews(logo, title, subtitle, featureBadge, letsGoButton)
 
         // Button click with animation
         letsGoButton.setOnClickListener {
@@ -38,15 +36,13 @@ class WelcomeActivity : AppCompatActivity() {
         }
 
         // Add floating animation to logo
-        startFloatingAnimation(logo)
+       // startFloatingAnimation(logo)
     }
 
     private fun animateViews(
         logo: View,
         title: View,
         subtitle: View,
-        plumbingCard: View,
-        acCard: View,
         featureBadge: View,
         button: View
     ) {
@@ -61,27 +57,6 @@ class WelcomeActivity : AppCompatActivity() {
         // Subtitle animation - slide up and fade in (delayed)
         val subtitleAnim = AnimationUtils.loadAnimation(this, R.anim.slide_up_fade_in_delayed)
         subtitle.startAnimation(subtitleAnim)
-
-        // Cards animation with stagger
-        plumbingCard.alpha = 0f
-        plumbingCard.translationX = -100f
-        plumbingCard.animate()
-            .alpha(1f)
-            .translationX(0f)
-            .setDuration(600)
-            .setStartDelay(600)
-            .setInterpolator(DecelerateInterpolator())
-            .start()
-
-        acCard.alpha = 0f
-        acCard.translationX = 100f
-        acCard.animate()
-            .alpha(1f)
-            .translationX(0f)
-            .setDuration(600)
-            .setStartDelay(700)
-            .setInterpolator(DecelerateInterpolator())
-            .start()
 
         // Feature badge animation
         featureBadge.alpha = 0f
